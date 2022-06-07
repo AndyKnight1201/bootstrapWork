@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  .heigh100vh {
+    height: calc(100vh - 100px);
+  }
+
+
+  .imgA {
+    background-image: url('../image/色溫練習-調.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .py-80 {
+    padding: 100px 0px;
+  }
+
+  .mx-310 {
+    margin: 0 310px;
+  }
+
+
+
+//   Pricing
+  #list-Pricing {
+    P{
+        margin: 0%;
+        width: 100px;   
+    }
+
+    div:nth-child(1){
+        background-color: rgb(218, 218, 218);
+    }
+    
+    >div{
+        border:0px;
+        border-bottom: 2px solid rgb(162, 162, 162);
+    }
+
+    >div:last-child{
+        border:0px;
+    }
+
+    div:last-child{
+        color: blue;
+    }
+    a{
+        text-decoration:none;
+    }
+    button{
+        width:100px;
+    }
+}
+
+#Pitchfork{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .afterLine::after{
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: #6366f1;
+        margin: 5px 0;   
+    }
+}
+
+#Pitchfork-Card{
+    .card-body>p:nth-child(1){
+        font-size: 10px;
+        letter-spacing :2px;
+        color:blue;
+    }
+    .w18em{
+        width: 18rem;
+    }
+    .row{
+        @media (max-width:1200px){
+            margin-left: 0;
+            margin-right: 0;
+         } 
+
+    }
+    img{
+        display:block;
+        object-fit: cover;
+        object-position: center;
+        @media (max-width:765px){
+            height: 16rem;
+         } 
+    }
+}
+
+
+#shooting{
+    .line{
+        height: 1px;
+        background-color: rgb(187, 187, 187);
+        margin: 50px 0;
+    }
+    >div{ 
+        display: flex;
+        margin-bottom: 45px;
+        padding-bottom: 45px;
+     @media (max-width:650px){
+        display: block;
+        text-align: center;
+
+    } 
+    }
+    >div:not(:nth-child(3)){
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+
+    >div>div{
+        padding:0 3em;
+        @media (max-width:650px){
+            text-align: center;
+            width: 100%;
+            padding: 0;
+        } 
+    }
+    img{
+        @media (max-width:650px){
+           width: 80px;
+        } 
+    }
+
+
+}
+
+#Catcher{
+        width: 80%;
+        @media (max-width:990px){
+            width: 100%;
+         }
+          
+    .imgB{
+            display:block;
+            object-fit: cover;
+            object-position: center;
+            height: auto;   
+            @media (max-width:990px){
+                height: 16rem;
+             } 
+    }
+
+}
+
+.CATEGORY{
+    div{
+        border: 0;
+    }
+    img{
+        display:block;
+        object-fit: cover;
+        object-position: center;
+        @media (max-width:765px){
+            height: 10rem;
+         } 
+    }
+    .row{
+        @media (max-width:990px){
+            margin-left: 0;
+            margin-right: 0;
+         } 
+
+    }
+}
+
+#CATEGORIES{
+    padding: 96px 20px;
+    h5{
+        font-size: 15px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .ps80{
+        padding-left: 80px;
+    }
+    p{
+        font-size: 14px;
+    }
+    >div:nth-child(2)>div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    @media (max-width:768px){
+        flex-direction: column;
+        text-align: center;
+        .ps80{
+            padding: 0;
+        }
+        >div:nth-child(1)>div{
+            justify-content: center;
+        }
+    } 
+    
+}
